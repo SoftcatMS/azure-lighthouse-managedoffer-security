@@ -1,0 +1,101 @@
+{
+ "$schema": "https://schema.management.azure.com/schemas/2019-08-01/subscriptionDeploymentTemplate.json#",
+ "contentVersion": "1.0.0.0",
+ "parameters": {
+  "mspOfferName": {
+   "type": "string",
+   "metadata": {
+    "description": "Specify a unique name for your offer"
+   },
+   "defaultValue": "Softcat - Managed SentinelOffer"
+  },
+  "mspOfferDescription": {
+   "type": "string",
+   "metadata": {
+    "description": "Name of the Managed Service Provider offering"
+   },
+   "defaultValue": "Provides permissions from groups in the Softcat Partner account access to customer environments for the Managed Sentinel service"
+  }
+ },
+ "variables": {
+  "mspRegistrationName": "[guid(parameters('mspOfferName'))]",
+  "mspAssignmentName": "[guid(parameters('mspOfferName'))]",
+  "managedByTenantId": "fbd4347a-3682-41ac-8e52-8a2cbf8dd0dc",
+  "authorizations": [
+   {
+    "principalId": "28d90f0f-605a-4e0e-a581-3cfc88e106e7",
+    "roleDefinitionId": "73c42c96-874c-492b-b04d-ab87d138a893",
+    "principalIdDisplayName": "ALH - Managed Security L1 Analyst"
+   },
+   {
+    "principalId": "28d90f0f-605a-4e0e-a581-3cfc88e106e7",
+    "roleDefinitionId": "8d289c81-5878-46d4-8554-54e1e3d8b5cb",
+    "principalIdDisplayName": "ALH - Managed Security L1 Analyst"
+   },
+   {
+    "principalId": "a25fa289-a759-4bd4-9984-a6e876a19920",
+    "roleDefinitionId": "73c42c96-874c-492b-b04d-ab87d138a893",
+    "principalIdDisplayName": "ALH - Managed Security L2 Analyst"
+   },
+   {
+    "principalId": "a25fa289-a759-4bd4-9984-a6e876a19920",
+    "roleDefinitionId": "8d289c81-5878-46d4-8554-54e1e3d8b5cb",
+    "principalIdDisplayName": "ALH - Managed Security L2 Analyst"
+   },
+   {
+    "principalId": "8e3f0713-e460-4973-8b72-5ffcdf1b6b26",
+    "roleDefinitionId": "73c42c96-874c-492b-b04d-ab87d138a893",
+    "principalIdDisplayName": "ALH - Managed Security L3 Analyst"
+   },
+   {
+    "principalId": "8e3f0713-e460-4973-8b72-5ffcdf1b6b26",
+    "roleDefinitionId": "8d289c81-5878-46d4-8554-54e1e3d8b5cb",
+    "principalIdDisplayName": "ALH - Managed Security L3 Analyst"
+   },
+   {
+    "principalId": "a405e58d-4374-4c6a-bd8f-2f394feace7a",
+    "roleDefinitionId": "73c42c96-874c-492b-b04d-ab87d138a893",
+    "principalIdDisplayName": "ALH - Managed Security Security Engineer"
+   },
+   {
+    "principalId": "a405e58d-4374-4c6a-bd8f-2f394feace7a",
+    "roleDefinitionId": "ab8e14d6-4a74-4a29-9ba8-549422addade",
+    "principalIdDisplayName": "ALH - Managed Security Security Engineer"
+   }
+  ]
+ },
+ "resources": [
+  {
+   "type": "Microsoft.ManagedServices/registrationDefinitions",
+   "apiVersion": "2020-02-01-preview",
+   "name": "[variables('mspRegistrationName')]",
+   "properties": {
+    "registrationDefinitionName": "[parameters('mspOfferName')]",
+    "description": "[parameters('mspOfferDescription')]",
+    "managedByTenantId": "[variables('managedByTenantId')]",
+    "authorizations": "[variables('authorizations')]"
+   }
+  },
+  {
+   "type": "Microsoft.ManagedServices/registrationAssignments",
+   "apiVersion": "2020-02-01-preview",
+   "name": "[variables('mspAssignmentName')]",
+   "dependsOn": [
+    "[resourceId('Microsoft.ManagedServices/registrationDefinitions/', variables('mspRegistrationName'))]"
+   ],
+   "properties": {
+    "registrationDefinitionId": "[resourceId('Microsoft.ManagedServices/registrationDefinitions/', variables('mspRegistrationName'))]"
+   }
+  }
+ ],
+ "outputs": {
+  "mspOfferName": {
+   "type": "string",
+   "value": "[concat('Managed by', ' ', parameters('mspOfferName'))]"
+  },
+  "authorizations": {
+   "type": "array",
+   "value": "[variables('authorizations')]"
+  }
+ }
+}
