@@ -61,6 +61,11 @@
     "principalId": "a405e58d-4374-4c6a-bd8f-2f394feace7a",
     "roleDefinitionId": "ab8e14d6-4a74-4a29-9ba8-549422addade",
     "principalIdDisplayName": "ALH - Managed Security Security Engineer"
+   },
+   {
+    "principalId": "a405e58d-4374-4c6a-bd8f-2f394feace7a",
+    "roleDefinitionId": "91c1777a-f3dc-4fae-b103-61d183457e46",
+    "principalIdDisplayName": "ALH - Managed Security Security Engineer"
    }
   ]
  },
