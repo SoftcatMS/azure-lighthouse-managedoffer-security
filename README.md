@@ -7,13 +7,13 @@ The following permissions are included in this lighthouse offer.
 
 | User/Group                                | Delegated Permission                                |
 | ----------------------------------------- | --------------------------------------------------- |
-| ALH - Managed Security L1 Analyst         | Log Analystics Reader                               |
+| ALH - Managed Security L1 Analyst         | Log Analytics Reader                               |
 | ALH - Managed Security L1 Analyst         | Microsoft Sentinel Reader                           |
-| ALH - Managed Security L2 Analyst         | Log Analystics Reader                               |
+| ALH - Managed Security L2 Analyst         | Log Analytics Reader                               |
 | ALH - Managed Security L2 Analyst         | Microsoft Sentinel Reader                           |
-| ALH - Managed Security L3 Analyst         | Log Analystics Reader                               |
+| ALH - Managed Security L3 Analyst         | Log Analytics Reader                               |
 | ALH - Managed Security L3 Analyst         | Microsoft Sentinel Reader                           |
-| ALH - Managed Security Security Engineer  | Log Analystics Reader                               |
+| ALH - Managed Security Security Engineer  | Log Analytics Reader                               |
 | ALH - Managed Security Security Engineer  | Microsoft Sentinel Contributor                      |
 | ALH - Managed Security Security Engineer  | Managed Services Registration Assignment Delete Role|
 
