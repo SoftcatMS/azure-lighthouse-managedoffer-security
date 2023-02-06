@@ -7,7 +7,7 @@
    "metadata": {
     "description": "Specify a unique name for your offer"
    },
-   "defaultValue": "Softcat - Managed SentinelOffer"
+   "defaultValue": "Softcat - Managed Sentinel Offer"
   },
   "mspOfferDescription": {
    "type": "string",
