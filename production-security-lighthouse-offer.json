@@ -67,6 +67,23 @@
     "roleDefinitionId": "91c1777a-f3dc-4fae-b103-61d183457e46",
     "principalIdDisplayName": "ALH - Managed Security Security Engineer"
    }
+  ],
+  "eligibleAuthorizations": [
+   {
+    "justInTimeAccessPolicy": {
+     "multiFactorAuthProvider": "Azure",
+     "maximumActivationDuration": "PT4H",
+     "managedByTenantApprovers": [
+      {
+       "principalId": "11d030b9-8a2c-435d-8b0f-80dcb7716243",
+       "principalIdDisplayName": "PIM - Managed Security (Approvers)"
+      }
+     ]
+    },
+    "principalId": "a405e58d-4374-4c6a-bd8f-2f394feace7a",
+    "principalIdDisplayName": "ALH - Managed Security Security Engineer",
+    "roleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c"
+   }
   ]
  },
  "resources": [
@@ -78,7 +95,8 @@
     "registrationDefinitionName": "[parameters('mspOfferName')]",
     "description": "[parameters('mspOfferDescription')]",
     "managedByTenantId": "[variables('managedByTenantId')]",
-    "authorizations": "[variables('authorizations')]"
+    "authorizations": "[variables('authorizations')]",
+    "eligibleAuthorizations": "[variables('eligibleAuthorizations')]"
    }
   },
   {
@@ -101,6 +119,10 @@
   "authorizations": {
    "type": "array",
    "value": "[variables('authorizations')]"
+  },
+  "eligibleAuthorizations": {
+   "type": "array",
+   "value": "[variables('eligibleAuthorizations')]"
   }
  }
 }
