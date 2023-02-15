@@ -16,7 +16,7 @@ The following permissions are included in this lighthouse offer.
 | ALH - Managed Security Security Engineer  | Log Analytics Reader                                | Permanent   | -            | -     | -         |
 | ALH - Managed Security Security Engineer  | Microsoft Sentinel Contributor                      | Permanent   | -            | -     | -         |
 | ALH - Managed Security Security Engineer  | Managed Services Registration Assignment Delete Role| Permanent   | -            | -     | -         |
-| ALH - Managed Security Security Engineer  | Contributor                                         | Eligible    | -            | Azure | PIM - Managed Security (Approvers) |
+| ALH - Managed Security Security Engineer  | Contributor                                         | Eligible    | 4 hours      | Azure | PIM - Managed Security (Approvers) |
 
 # Deploy to Azure 
 
