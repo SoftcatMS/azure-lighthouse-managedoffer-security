@@ -29,7 +29,7 @@
    },
    {
     "principalId": "28d90f0f-605a-4e0e-a581-3cfc88e106e7",
-    "roleDefinitionId": "8d289c81-5878-46d4-8554-54e1e3d8b5cb",
+    "roleDefinitionId": "3e150937-b8fe-4cfb-8069-0eaf05ecd056",
     "principalIdDisplayName": "ALH - Managed Security L1 Analyst"
    },
    {
@@ -39,7 +39,7 @@
    },
    {
     "principalId": "a25fa289-a759-4bd4-9984-a6e876a19920",
-    "roleDefinitionId": "8d289c81-5878-46d4-8554-54e1e3d8b5cb",
+    "roleDefinitionId": "3e150937-b8fe-4cfb-8069-0eaf05ecd056",
     "principalIdDisplayName": "ALH - Managed Security L2 Analyst"
    },
    {
@@ -49,7 +49,7 @@
    },
    {
     "principalId": "8e3f0713-e460-4973-8b72-5ffcdf1b6b26",
-    "roleDefinitionId": "8d289c81-5878-46d4-8554-54e1e3d8b5cb",
+    "roleDefinitionId": "3e150937-b8fe-4cfb-8069-0eaf05ecd056",
     "principalIdDisplayName": "ALH - Managed Security L3 Analyst"
    },
    {
