@@ -8,11 +8,11 @@ The following permissions are included in this lighthouse offer.
 | User/Group                                | Delegated Permission                                | Access Type | Max Duration | MFA   | Approvers |
 | ----------------------------------------- | --------------------------------------------------- | ----------- | ------------ | ---   | --------- |
 | ALH - Managed Security L1 Analyst         | Log Analytics Reader                                | Permanent   | -            | -     | -         |
-| ALH - Managed Security L1 Analyst         | Microsoft Sentinel Reader                           | Permanent   | -            | -     | -         |
+| ALH - Managed Security L1 Analyst         | Microsoft Sentinel Responder                        | Permanent   | -            | -     | -         |
 | ALH - Managed Security L2 Analyst         | Log Analytics Reader                                | Permanent   | -            | -     | -         |
-| ALH - Managed Security L2 Analyst         | Microsoft Sentinel Reader                           | Permanent   | -            | -     | -         |
+| ALH - Managed Security L2 Analyst         | Microsoft Sentinel Responder                        | Permanent   | -            | -     | -         |
 | ALH - Managed Security L3 Analyst         | Log Analytics Reader                                | Permanent   | -            | -     | -         |
-| ALH - Managed Security L3 Analyst         | Microsoft Sentinel Reader                           | Permanent   | -            | -     | -         |
+| ALH - Managed Security L3 Analyst         | Microsoft Sentinel Responder                        | Permanent   | -            | -     | -         |
 | ALH - Managed Security Security Engineer  | Log Analytics Reader                                | Permanent   | -            | -     | -         |
 | ALH - Managed Security Security Engineer  | Microsoft Sentinel Contributor                      | Permanent   | -            | -     | -         |
 | ALH - Managed Security Security Engineer  | Managed Services Registration Assignment Delete Role| Permanent   | -            | -     | -         |
